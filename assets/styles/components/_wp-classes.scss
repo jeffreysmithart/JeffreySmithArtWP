@@ -1,0 +1,187 @@
+// WordPress Generated Classes
+// http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+
+body.sticky,
+article.sticky {
+  position: static;
+}
+
+.postform {
+  text-transform: lowercase;
+  min-height: 2.4375rem;
+  height: auto;
+}
+
+// Media alignment
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: rem-calc(15) auto;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  // margin-bottom: ($line-height-computed / 2);
+  height: auto;
+}
+
+@include breakpoint(small) {
+  // Only float if not on an extra small device
+  .alignleft {
+    float: left;
+
+    // margin-right: ($line-height-computed / 2);
+ 
+  }
+
+  .alignright {
+    float: right;
+
+    // margin-left: ($line-height-computed / 2);
+ 
+  }
+}
+
+
+// Captions
+.wp-caption {
+  border: 0 none;
+  box-shadow: none;
+  line-height: normal;
+
+  max-width: 100%;
+
+  @include breakpoint(small only) {
+    width: 100% !important;
+  }
+
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: rem-calc(15);
+    padding-bottom: .9375rem;
+    border-bottom: 1px solid rgba(65, 75, 86, 0.4);
+  }
+
+  .wp-caption-text {
+    max-width: rem-calc(480);
+    margin: 0 auto rem-calc(15) 0;
+    text-align: left;
+    line-height: 1.1;
+    font-size: 1rem;
+    font-family: $font-serif;
+    font-style: italic;
+  }
+}
+
+// Text meant only for screen readers
+.screen-reader-text {
+  @extend .show-for-sr;
+
+  // @extend .sr-only-focusable;
+}
+
+//instagram plugin customization
+.sbi_photo_wrap {
+  border: 1px solid $gray;
+}
+
+.sbi_header_link {
+  
+  padding: rem-calc(20) rem-calc(10);
+  color: $body-font-color;
+}
+
+.sb_instagram_header {
+  padding-top: 0 !important;
+  padding-bottom: rem-calc(15) !important;
+  margin: 0 auto !important;
+  max-width: rem-calc(1200);
+  float: none !important;
+  overflow: auto;
+
+  @include breakpoint(large down) {
+    width: calc(100% - #{rem-calc(15)}) !important;
+    margin-left: rem-calc(7.5) !important;
+    margin-right: rem-calc(7.5) !important;
+  }
+}
+
+#sb_instagram #sbi_images .sbi_item {
+  @include breakpoint(medium up) {
+    padding: rem-calc(5) !important;
+  }
+}
+
+#sb_instagram #sbi_images {
+  @include breakpoint(xlarge) {
+    padding: rem-calc(5) 0 !important;
+    width: calc(100% + #{rem-calc(10)});
+    margin-left: rem-calc(-5);
+  }
+
+
+  @include breakpoint(large down) {
+    padding: rem-calc(5) rem-calc(2.5);
+  }
+}
+
+
+
+//remove jet pack related posts date
+.jp-relatedposts-post-date {
+  display: none;
+}
+
+//add to any
+a .a2a_svg {
+  // -webkit-filter: invert(1);
+  // filter: invert(1);
+}
+
+.a2a_default_style a {
+  float: none !important;
+  display: inline-block;
+}
+
+.a2a_button_pinterest {
+  span {
+    background-size: 30px;
+    background-repeat: no-repeat !important;
+    background-position: center;
+  }
+}
+
+.a2a_button_facebook {
+  span {
+    background-size: 27px;
+    background-repeat: no-repeat !important;
+    background-position: 0% 15%;
+  }
+}
+
+.a2a_button_google_plus {
+  span {
+    background-size: 40px;
+    background-repeat: no-repeat !important;
+    background-position: center;
+  }
+}
+
+
+
+
+

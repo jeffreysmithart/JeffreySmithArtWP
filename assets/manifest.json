@@ -1,0 +1,52 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },  
+    "customWoo.js": {
+        "files": [
+          "scripts/customWoo.js"
+      ]
+    },
+    "post-ajax.js": {
+        "files": [
+          "scripts/post-ajax.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "foundation.sticky.js": {
+      "bower": ["foundation-sites"]
+    },
+    "foundation.util.triggers.js": {
+      "bower": ["foundation-sites"]
+    },
+    "foundation.util.mediaQuery.js": {
+      "bower": ["foundation-sites"]
+    },
+    "foundation.min.js": {
+      "bower": ["foundation-sites"]
+    },
+     "jquery.scrollme.min.js": {
+      "bower": ["scrollme"]
+    }
+  },
+  "config": {
+    "devUrl": "http://jeffreysmithart.dev/"
+  }
+}

@@ -1,0 +1,198 @@
+#breadcrumbs {
+  opacity: 1;
+  position: static;
+  padding: 0 rem-calc(10) 0 rem-calc(10);
+  margin-bottom: 0;
+  font-size: rem-calc(16);
+  text-transform: capitalize;
+  @include breakpoint(small down) {
+    margin-top: rem-calc(5);
+  }
+  @include breakpoint(medium) {
+   padding: 0 rem-calc(10) 0 rem-calc(15);
+  }
+  @include breakpoint(large up) {
+   padding: 0 rem-calc(10) 0 rem-calc(35);
+  }
+
+  a {
+    color: $blue-gray;
+    text-decoration: underline;
+
+  }
+
+  .breadcrumb_last {
+    color: rgba($blue-gray, 0.4);
+    text-transform: none;
+  }
+
+
+}
+
+//footer menu styling
+.footer-menu {
+  padding: 0;
+  ul {
+    display: inline-block;
+
+    a {
+      color: $primary-color;
+      background-color: transparent;
+      transition: all .25s;
+      white-space: nowrap;
+      &:hover, &:focus {
+        color: $white;
+        background-color: rgba($primary-color, 0.5);
+      }
+    }
+  }
+
+  .menu > li {
+    @include breakpoint(550 down) {
+      display: block;
+    }
+  }
+
+  @include breakpoint(medium up) {
+    float: left;
+  }
+}
+
+.menu-icon {
+  &:before {
+    content: "menu";
+    color: currentColor;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: rem-calc(5);
+    font-size: rem-calc(13);
+    margin-left: rem-calc(30);
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+}
+
+.menu-icon {
+  width: 100%;
+}
+
+.title-bar-title {
+  padding-left: rem-calc(30);
+}
+
+.menu-icon::after {
+  width: 20px;
+}
+
+//header menu styling
+.main-nav-wrapper {
+  li {
+    position: relative;
+
+  }
+
+  a {
+    font-size: rem-calc(14);
+    padding: rem-calc(15);
+    letter-spacing: rem-calc(2);
+    text-transform: uppercase;
+    color: currentColor;
+    transition-duration: .15s;
+    transition-property: color, background-color, border-color;
+    position: relative;
+    z-index: 2;
+       &:after {
+        content:"";
+        height: 2px;
+        width: 0;
+        background-color: currentColor;
+        position: absolute;
+        bottom: 0;
+        left: rem-calc(16);
+        transition: width 0.3s;
+      }
+
+    &:hover {
+      color: $medium-gray;
+       &:after {
+        width: calc(100% - #{rem-calc(32)});
+      }
+    }
+  }
+
+  .current_page_item a, .current-menu-parent a, .active a {
+    color: $primary-color;
+    transition: opacity 0.3s;
+
+    &:after {
+      width: rem-calc(20);
+    }
+
+    &:hover {
+      opacity: 0.8;
+      &:after {
+        opacity: 0.8;
+      }
+
+    }
+  }
+}
+
+.sub-menu {
+  @extend .menu;
+}
+
+.menu-text {
+  padding: 0;
+}
+
+.main-nav-wrapper {
+  text-align: center;
+
+  // border-top: 1px solid currentColor;
+}
+
+.main-nav {
+  display: table;
+  margin: 0 auto;
+
+  @include breakpoint(large up) {
+    margin: 0 0 0 auto;
+  }
+
+
+  @include breakpoint(medium only) {
+    a {
+      font-size: rem-calc(13);
+      padding-left: .7rem !important;
+      padding-right: .7rem !important;
+    }
+  }
+}
+
+//Utility Navigation styling
+.utility-nav {
+  width: 100%;
+  text-align: right;
+  min-height: rem-calc(32);
+  margin-bottom: 1rem;
+
+  li {
+    display: inline-block;
+
+    a {
+      letter-spacing: rem-calc(2);
+      text-transform: uppercase;
+      font-size: rem-calc(14);
+    }
+  }
+
+  .social--follow {
+    padding: 0 rem-calc(7.5);
+  }
+}
+
+.wpmenucart-contents {
+  padding-top: .5rem !important;
+}

@@ -1,0 +1,183 @@
+.featured-image-wrapper {
+  opacity: 1;
+}
+
+.featured-image-inner {
+  opacity: 1;
+  padding: 10% 10% rem-calc(220);
+  background-image: url("../images/noise.png");
+  box-shadow: 2px 2px 15px -3px rgba(0, 0, 0, 0.5);
+
+  // outline: 10px solid rgba($black, 0.1);
+  // outline-offset: -10px;
+  @include breakpoint(small only) {
+    padding: 10% 10% rem-calc(45);
+  }
+
+
+  img {
+    opacity: 1;
+    max-height: 90vh;
+    width: auto;
+    border-radius: 2px;
+    box-shadow: 1px 4px 21px 3px rgba(0, 0, 0, 0.2), -3px 5px 81px 20px rgba(0, 0, 0, 0.2), 1px 1px 8px 2px rgba(0, 0, 0, 0.25);
+    outline: 2px solid rgba(black, 0.3);
+    outline-offset: -2px;
+  }
+}
+
+.featured-title {
+  text-align: center;
+  color: $black;
+  line-height: 1.2 !important;
+  letter-spacing: 1px;
+
+  @include breakpoint(large up) {
+    font-size: 3.5rem;
+  }
+
+
+  @include breakpoint(medium up) {
+    font-size: 2.5rem;
+    text-align: left !important;
+  }
+}
+
+.portfolio-item-meta {
+  margin-top: rem-calc(60);
+
+  h6, h5 {
+    text-transform: lowercase;
+    font-family: $font-family-monospace;
+    color: rgba($medium-gray, 0.8);
+
+    a {
+      color: $primary-color;
+      border-bottom: 1px solid currentColor;
+      font-family: $font-serif;
+    }
+  }
+}
+
+.post-section {
+  margin-bottom: rem-calc(45);
+}
+
+.text-over-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: rgba($black, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-inner {
+    margin: rem-calc(45) rem-calc(15);
+    color: $white;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-outer {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include breakpoint(large) {
+      margin-left: rem-calc(-100) !important;
+    }
+  }
+}
+
+.portfolio-text {
+  margin-top: rem-calc(-105);
+  padding-top: rem-calc(60);
+
+  // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50px, rgba(255, 255, 255, 1) 51px);
+  background-color: $white;
+
+  @include breakpoint(medium down) {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+  }
+
+
+  @include breakpoint(small only) {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.portfolio-details {
+  max-width: rem-calc(700);
+  margin: 0 auto rem-calc(45);
+  margin-right: auto;
+  background: $off-white;
+  padding: rem-calc(30);
+
+  h3 {
+    border-bottom: 1px solid rgba($gray, 0.5);
+    margin-bottom: rem-calc(15);
+    padding: rem-calc(15) 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $font-sans-serif;
+    font-weight: 700;
+    color: #545963;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: darken($gray, 25%);
+    font-weight: 400;
+    font-family: $font-family-monospace;
+
+    em {
+      color: $black;
+      font-weight: 900;
+      letter-spacing: 0;
+      font-family: $font-serif;
+    }
+  }
+}
+
+.product-callout {
+  text-align: center;
+  
+  position: relative;
+  overflow: hidden;
+
+ 
+  &-text-content {
+    .amount {
+    display: block;
+    line-height: (15/13);
+    font-family: $font-family-monospace;
+    font-size: rem-calc(13);
+    text-align: center;
+    margin-bottom: rem-calc(20);
+    }
+
+    h4 {
+      
+      margin-bottom: rem-calc(20);
+      
+    }
+
+    h3 {
+      
+      margin-bottom: rem-calc(20);
+      
+    }
+
+  }
+}

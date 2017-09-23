@@ -1,0 +1,21 @@
+.social-share {
+  text-align: center;
+  padding-bottom: rem-calc(30);
+  margin: 0 0 rem-calc(30);
+
+
+
+  &__prouct-single {
+    text-align: left;
+    .section-headline {
+      text-align: left;
+      border: 0 none;
+    }
+  }
+}
+
+//variation for the social sharing on portfolio item pages
+.featured-title-share {
+  margin-top: rem-calc(60);
+
+}

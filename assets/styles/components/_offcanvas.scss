@@ -1,0 +1,51 @@
+.off-canvas {
+  // height: 100%;
+  padding-top: rem-calc(61);
+
+  .social-follow {
+    margin-top: rem-calc(45);
+    padding-left: rem-calc(15);
+  }
+}
+
+.off-canvas-wrapper {
+  background-color: $white;
+}
+
+
+.mobile-nav {
+  margin-bottom: rem-calc(45);
+}
+
+//search reveal
+.is-reveal-open .reveal-overlay {
+  animation-duration: 0.25s;
+  animation-name: fadein;
+  opacity: 1;
+}
+
+.reveal {
+  @include disable-mouse-outline;
+
+  h3 {
+    color: $white;
+  }
+
+  .close-button {
+    color: rgba($white, 0.5);
+  }
+
+  @include breakpoint(small only) {
+    padding-top: rem-calc(60);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

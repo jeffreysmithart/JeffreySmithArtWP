@@ -1,0 +1,64 @@
+.facetwp-selections {
+	background-color: $yellow;
+	ul {
+		margin-bottom: 0;
+		padding: rem-calc(20);
+		@include breakpoint(medium){
+			padding: rem-calc(20);
+		}
+
+	}
+	li {
+		padding-bottom: rem-calc(10);
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+}
+
+.facetwp-selection-label {
+	font-family: $font-family-monospace;
+	font-size: rem-calc(12);
+	vertical-align: top;
+	line-height: (16/12);
+	display: block;
+}
+.facetwp-per-page-select, .facetwp-sort-select {
+	margin-bottom: 0;
+}	
+
+.filtering {
+	background-color: $light-blue;
+	padding: rem-calc(15) 0;
+	margin-bottom: rem-calc(15);
+}
+
+
+.facetwp-counts {
+  display: inline;
+}
+
+
+
+.facetwp-page {
+  	font-size: rem-calc(16);
+ 	background-color: $white;
+ 	border-radius: 0;
+  	margin-right: .625rem !important;
+    padding: rem-calc(7) rem-calc(15) !important;
+    transition: background-color .3s;
+  &.active {
+    padding: 0.1875rem 0.625rem;
+    background-color: $yellow;
+    
+  }
+  &:hover {
+  	background-color: #ffdaa5;
+  }
+}
+
+.facetwp-checkbox {
+   &:first-letter {
+    text-transform: uppercase;
+  }
+}

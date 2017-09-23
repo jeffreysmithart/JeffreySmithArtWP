@@ -1,0 +1,113 @@
+/*  ======== cta card styling  ======== */
+.cta-card {
+  width: 100%;
+  float: right;
+  padding: rem-calc(30);
+  height: 100%;
+
+  @include breakpoint(small only) {
+    width: 100%;
+  }
+
+
+  &-wrapper {
+    padding: rem-calc(5) rem-calc(10) 0;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: bottom center;
+    position: relative;
+
+    @include breakpoint(medium up) {
+      padding: 0 rem-calc(2.5) rem-calc(5);
+    }
+
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 5px);
+      height: calc(100% - 5px);
+      background: rgba(#f7eee7, 0.4);
+      background-clip: content-box;
+      z-index: 1;
+    }
+  }
+
+  &-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: rem-calc(60) rem-calc(0);
+    position: relative;
+    z-index: 2;
+    border-radius: $global-radius-rounded;
+
+    @include breakpoint(medium up) {
+      padding: rem-calc(60) rem-calc(30);
+    }
+
+
+    h3 {
+      color: $blue-gray;
+      line-height: 1;
+      margin-bottom: rem-calc(30);
+      font-size: rem-calc(50);
+    }
+
+    .cta-text-content {
+      width: 100%;
+      max-width: rem-calc(320);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      position: relative;
+
+      @include breakpoint(large up) {
+        position: absolute;
+      }
+
+
+      @include breakpoint(medium up) {
+        width: 80%;
+      }
+
+
+      .button {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        background-color: lighten($deep-blue, 25%);
+      }
+    }
+  }
+
+
+
+  &__simple {
+    background-color: $primary-color;
+    background-image: url(../images/noise.png),radial-gradient(ellipse at 35% 5%,rgba(255,255,255,.15) 0,rgba(187,187,187,.05) 100%);
+    color: $white;
+
+  &-inner {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+  }
+    h3 {
+      display: block;
+      margin-bottom: 0;
+      color: currentColor;
+    }
+    a {
+      display: block;
+      padding: rem-calc(40);
+      color: currentColor;
+    }
+    .button {
+      color: $white;
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+
+

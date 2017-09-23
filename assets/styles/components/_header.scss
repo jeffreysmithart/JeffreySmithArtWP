@@ -1,0 +1,107 @@
+.global-header {
+  position: absolute;
+  top: rem-calc(20);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  &--inner {
+    max-width: $global-width;
+    background-color: $white;
+    box-shadow: 0 2px 3px 2px rgba(16, 45, 53, 0.23);
+    border-radius: 3px;
+
+    @include breakpoint(medium only) {
+      padding: rem-calc(10) rem-calc(5) 0;
+
+    }
+    @include breakpoint(medium) {
+      margin-left: rem-calc(15);
+      margin-right: rem-calc(15);
+    }
+    @include breakpoint(large up) {
+      padding: rem-calc(20) rem-calc(20) rem-calc(15);
+      margin: 0 auto;
+    }
+    @include breakpoint(small only) {
+      position: relative;
+      margin-left: rem-calc(10);
+      margin-right: rem-calc(10);
+    }
+  }
+}
+
+//mobile menu trigger button
+.menu-trigger {
+  margin-bottom: 0;
+  position: absolute;
+  top: 50%;
+  right: rem-calc(15);
+  transform: translateY(-50%);
+}
+
+//main site logo
+.site-logo-wrapper {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @include breakpoint(medium up) {
+    text-align: left;
+  }
+
+
+  svg {
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    transform-origin: left;
+    fill: $black;
+  }
+}
+
+.site-logo-headline {
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 0 0 0 rem-calc(15);
+
+  @include breakpoint(small down) {
+    display: inline-block;
+    max-width: 74%;
+  }
+
+
+  @include breakpoint(medium only) {
+    margin: auto;
+  }
+
+
+  @include breakpoint(small down) {
+    font-size: rem-calc(24);
+  }
+
+
+  &:hover {
+    svg {
+      // transform: scale(1.01);
+
+      // transition: all 0.5s;
+      fill: $dark-gray;
+    }
+  }
+}
+
+.site-logo {
+  color: currentColor;
+  transition: color .25s;
+  display: block;
+
+  &:hover, &:focus {
+    color: $dark-gray;
+  }
+
+  @include breakpoint(small only) {
+    padding-top: rem-calc(5);
+  }
+}

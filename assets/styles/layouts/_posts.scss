@@ -1,0 +1,108 @@
+.single {
+  article.post {
+    opacity: 1;
+  }
+
+  .entry-title {
+    text-align: center;
+    max-width: rem-calc(800);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem-calc(42.5);
+    line-height: 1.1;
+
+    @include breakpoint(small only) {
+      font-size: rem-calc(30);
+    }
+  }
+
+  .entry-content {
+    .main-content {
+      margin-bottom: rem-calc(100);
+      p {
+        margin-bottom: rem-calc(30);
+
+        @include breakpoint(medium up) {
+          font-size: rem-calc(18);
+        }
+
+
+        &:first-child {
+          position: relative;
+
+          // z-index: 1;
+
+          // &:after {
+          //   position: absolute;
+          //   content: "";
+          //   height: rem-calc(70);
+          //   width: rem-calc(70);
+          //   top: rem-calc(-10);
+          //   left: rem-calc(-15);
+          //   background-color: $off-white;
+          //   z-index: -1;
+          // }
+
+          &:first-letter {
+            font-size: rem-calc(55);
+            line-height: 1;
+            margin-right: rem-calc(10);
+            margin-top: rem-calc(-5);
+            float: left;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}
+
+.post-title {
+margin-top: rem-calc(80);
+
+}
+
+.post-content {
+  p, h1, h2, h3, h4, h5, h6 {
+    max-width: rem-calc(700);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.featured-image-wrapper {
+  margin-bottom: rem-calc(68);
+  text-align: center;
+
+  @include breakpoint(medium up) {
+    margin-left: rem-calc(7.5);
+    margin-right: rem-calc(7.5);
+  }
+
+
+  @include breakpoint(xlarge) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  @include breakpoint(small only) {
+    margin-left: rem-calc(-45);
+    margin-right: rem-calc(-45);
+  }
+}
+
+.post-footer {
+  text-align: center;
+  margin: rem-calc(30) 0 rem-calc(45);
+
+  h6, h5 {
+    text-transform: lowercase;
+
+    a {
+      color: $blue-gray;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.search-results {
+  article {
+    padding-bottom: rem-calc(60);
+    margin-bottom: rem-calc(60);
+    border-bottom: 1px solid $new-gray;
+
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+
+  margin-bottom: rem-calc(40);
+}

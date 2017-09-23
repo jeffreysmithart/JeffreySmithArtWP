@@ -1,0 +1,65 @@
+{
+    "key": "group_543352ee1ed55",
+    "title": "Portfolio Item - Display Options",
+    "fields": [
+        {
+            "key": "field_54335543fbca9",
+            "label": "Display Home",
+            "name": "display_home",
+            "type": "true_false",
+            "instructions": "Display this post on the Home page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_56b40e357a54b",
+            "label": "Accent\/background color",
+            "name": "accent_background_color",
+            "type": "color_picker",
+            "instructions": "Select a color to use as a background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "custom_fields",
+        "discussion",
+        "comments",
+        "author",
+        "format",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1494108725
+}

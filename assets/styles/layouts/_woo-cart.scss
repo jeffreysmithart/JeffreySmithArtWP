@@ -1,0 +1,34 @@
+//Thank you page/cart success
+.thank-you-message {
+  margin-bottom: rem-calc(45);
+  padding: rem-calc(30) !important;
+  outline: 1px solid $white;
+  outline-offset: rem-calc(-15);
+  color: white;
+  text-align: center;
+  background: $blue-medium;
+}
+
+.woocommerce-thankyou-order-received {
+  width: 100%;
+}
+
+.woocommerce-thankyou-order-details {
+  list-style: none;
+  margin-left: 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.woocommerce-order-received header h2 {
+  @include custom-headline;
+}
+
+.addresses {
+  div[class^="col-"] {
+    float: left;
+    width: 50%;
+  }
+}

@@ -1,0 +1,30 @@
+.comment-list {
+  list-style: none;
+}
+
+.comment-list ol {
+  list-style: none;
+}
+
+.comment-form p {
+  // @extend .form-group;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+  // @extend .form-control;
+}
+
+.comment-form input[type="submit"] {
+  @extend .button;
+}
+
+.comments {
+  max-width: $global-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem-calc(45);
+  padding-top: rem-calc(30);
+}

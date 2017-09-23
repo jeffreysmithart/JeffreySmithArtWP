@@ -1,0 +1,80 @@
+#sb_instagram #sbi_load .sbi_load_btn, #sb_instagram .sbi_follow_btn a {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  padding: 7px 14px;
+  margin: 5px auto 0 auto;
+  background: $dark-gray;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: $global-radius-rounded;
+  box-sizing: border-box;
+}
+
+#sb_instagram .sbi_follow_btn a {
+  background-color: $primary-color;
+}
+
+.read-more-link {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: rem-calc(16);
+  color: $blue-gray;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+
+  &:after {
+    content: " >";
+  }
+}
+
+.button.blue {
+  background-color: $blue-medium;
+  color: #fff;
+}
+
+.button.secondary {
+  transition: box-shadow 0.25s ease-out, background-color 0.25s ease-out;
+
+  &:hover {
+    box-shadow: -5px 5px 17px -1px rgba(0, 0, 0, 0.25);
+
+  }
+
+  @include breakpoint(large) {
+    font-size: rem-calc(20);
+  }
+}
+
+.button.hollow {
+  transition: background-color 0.15s ease-in;
+  z-index: 0;
+  color: currentColor;
+  border-color: currentColor;
+  &:hover {
+    background-color: $primary-color;
+    color: white;    
+  }
+  &.secondary {
+    color: $secondary-color;
+      &:hover {
+    background-color: $secondary-color;
+    color: white;    
+    }
+  }
+
+}
+
+
+.search-submit {
+  background-color: $yellow;
+}

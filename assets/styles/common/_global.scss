@@ -1,0 +1,67 @@
+body, html {
+  height: 100%;
+}
+
+html {}
+
+body {
+  overflow-x: hidden;
+
+  &.is-reveal-open {
+    //padding-right: rem-calc(15);
+  }
+}
+
+.main {
+  @include breakpoint(small only) {
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+.header-background {
+  color: $black;
+
+  // background-color: #B6B6B6;
+  // background-image: url("../images/noise.png"), radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(61, 61, 61, 0.31) 100%);
+}
+
+.page-header {
+  padding: rem-calc(90) 0 rem-calc(60);
+
+  @include breakpoint(medium) {
+    padding: rem-calc(45) 0 rem-calc(60);
+  }
+}
+
+.entry-title {
+  line-height: 1;
+}
+
+@mixin custom-headline {
+  border-bottom: 1px solid $gray;
+  border-top: 4px double $gray;
+  margin-bottom: rem-calc(30);
+  padding: rem-calc(15) 0;
+  font-size: rem-calc(16);
+  letter-spacing: rem-calc(3);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.custom-healine {
+  border-bottom: 1px solid $gray;
+  border-top: 4px double $gray;
+  margin-bottom: rem-calc(30);
+  padding: rem-calc(15) 0;
+  font-size: rem-calc(16);
+  letter-spacing: rem-calc(3);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body {
+  @include breakpoint(medium down) {
+    overflow-x: hidden;
+  }
+}

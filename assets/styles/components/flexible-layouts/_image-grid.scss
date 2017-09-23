@@ -1,0 +1,27 @@
+.image-grid {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &-image {
+    outline: 5px solid $white;
+    outline-offset: -5px;
+  }
+}
+
+.grid-caption {
+  text-align: left;
+  width: calc(100% - #{rem-calc(10)});
+  max-width: none !important;
+  margin: rem-calc(10) rem-calc(5) 0;
+  border-top: 1px solid rgba(65, 75, 86, 0.4);
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: rem-calc(20);
+  padding-top: rem-calc(15);
+}
+
+.post-big-image {
+  @include breakpoint(large) {
+    margin-left: rem-calc(-100) !important;
+  }
+}

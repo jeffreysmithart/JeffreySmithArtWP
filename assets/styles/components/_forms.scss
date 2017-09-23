@@ -1,0 +1,106 @@
+// Search form
+.search-form {
+  // @extend .form-inline;
+}
+
+.search-form label {
+  font-weight: normal;
+
+  // @extend .form-group;
+}
+
+.search-form .search-field {
+  // @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .button;
+
+  // @extend .btn-default;
+}
+
+select {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.af-form-wrapper {
+  .af-element {
+    text-align: left;
+    width: rem-calc(250);
+    max-width: 90%;
+
+    @include breakpoint(675px up) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+
+    @include breakpoint(large up) {
+      width: rem-calc(300);
+    }
+
+
+    .submit {
+      background-color: $white;
+      color: $blue-medium;
+      border: 0 none;
+      outline: 0 none;
+    }
+
+    .previewLabel {
+      color: $white;
+      font-family: $font-serif;
+    }
+
+    input {
+      background-color: rgba($white, 0.9);
+
+      $color: $blue-gray;
+
+      &:focus {
+        background-color: $white;
+      }
+    }
+
+    &.buttonContainer {
+      width: auto;
+      margin-top: rem-calc(9);
+
+      input {
+        padding: rem-calc(7);
+        background-color: #FFBB58;
+        transition: all .25s;
+        color: $body-font-color;
+        padding: rem-calc(7) rem-calc(50);
+
+        &:hover, &:focus {
+          background-color: $white;
+          
+        }
+      }
+    }
+  }
+
+  .af-body {
+    max-width: rem-calc(960);
+    margin: 0 auto;
+
+    @include breakpoint(674 down) {
+      display: inline-block;
+    }
+  }
+}
+.search-field {
+  border-width: 0 0 2px 0;
+  padding: rem-calc(20) rem-calc(10);
+  box-shadow: 0 0 0;
+  font-size: rem-calc(24);
+  height: auto;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+    border-width: 0 0 2px 0;
+  }
+}

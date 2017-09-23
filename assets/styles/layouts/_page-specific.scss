@@ -1,0 +1,28 @@
+/*=========about page =========*/
+.about {
+  h1 {
+    // line-height: 1;
+ 
+  }
+
+  h2 {
+    font-size: rem-calc(18);
+    margin-bottom: 1em;
+
+    @include breakpoint(medium up) {
+      font-size: rem-calc(22);
+    }
+  }
+
+  .flex-video {
+    margin: 1em auto;
+  }
+
+  .post-section {
+    .medium-6:first-child {
+      p:first-of-type {
+        margin-top: .9375rem;
+      }
+    }
+  }
+}
