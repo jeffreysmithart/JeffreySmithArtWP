@@ -43,21 +43,7 @@
   }
 }
 
-.portfolio-item-meta {
-  margin-top: rem-calc(60);
 
-  h6, h5 {
-    text-transform: lowercase;
-    font-family: $font-family-monospace;
-    color: rgba($medium-gray, 0.8);
-
-    a {
-      color: $primary-color;
-      border-bottom: 1px solid currentColor;
-      font-family: $font-serif;
-    }
-  }
-}
 
 .post-section {
   margin-bottom: rem-calc(45);

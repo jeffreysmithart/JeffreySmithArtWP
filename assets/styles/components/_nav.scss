@@ -18,7 +18,7 @@
   a {
     color: $blue-gray;
     text-decoration: underline;
-
+    text-decoration-skip: ink;
   }
 
   .breadcrumb_last {
@@ -116,7 +116,7 @@
     &:hover {
       color: $medium-gray;
        &:after {
-        width: calc(100% - #{rem-calc(32)});
+        width: calc(100% - #{rem-calc(32)}) !important;
       }
     }
   }

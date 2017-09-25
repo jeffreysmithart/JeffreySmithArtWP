@@ -24,7 +24,7 @@
         <div class="row align-center">
           <div class="medium-4 small-12 columns">
             <h1 class="entry-title featured-title"><span><?php the_title(); ?></span></h1>
-              <div class="portfolio-item-meta show-for-medium">
+              <div class="meta-tags show-for-medium">
                 <h5>
                   <?php echo get_the_term_list( $post->ID, 'portfolio-category', 'posted in:  ', '/', '' ); ?>
                 </h5>

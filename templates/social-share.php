@@ -3,7 +3,7 @@
     if (is_singular('product')){
         echo ' social-share__prouct-single';
     }
-    echo '"><h4 class="section-headline">Share this</h4>';
+    echo '"><h4 class="social-share__headline">Share this</h4>';
     ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true ) );
     echo '</div>';
 } ?>

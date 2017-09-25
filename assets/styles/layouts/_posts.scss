@@ -95,14 +95,4 @@ margin-top: rem-calc(80);
 
 .post-footer {
   text-align: center;
-  margin: rem-calc(30) 0 rem-calc(45);
-
-  h6, h5 {
-    text-transform: lowercase;
-
-    a {
-      color: $blue-gray;
-      border-bottom: 1px solid currentColor;
-    }
-  }
 }

@@ -27,16 +27,19 @@
       </div>
       <?php get_template_part('templates/flexible', 'layouts'); ?>
     </div>
+    <?php get_template_part('templates/social-share'); ?>
     <footer class="post-footer">
-    <h5>posted in: 
-    <?php the_category( ' / ' );?>
-    </h5>
-    <h6>
-       <?php the_tags(); ?>
-    </h6>
+        <div class="meta-tags">
+        <h5>posted in:
+        <?php the_category( ' / ' );?>
+        </h5>
+        <h5>
+           <?php the_tags(); ?>
+        </h5>
+    </div>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
-    <?php get_template_part('templates/social-share'); ?>
+
     <?php comments_template('/templates/comments.php'); ?>
   </article>
   

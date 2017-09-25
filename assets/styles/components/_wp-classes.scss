@@ -55,7 +55,7 @@ article.sticky {
   border: 0 none;
   box-shadow: none;
   line-height: normal;
-
+  width: auto !important;
   max-width: 100%;
 
   @include breakpoint(small only) {
@@ -146,40 +146,7 @@ article.sticky {
   display: none;
 }
 
-//add to any
-a .a2a_svg {
-  // -webkit-filter: invert(1);
-  // filter: invert(1);
-}
 
-.a2a_default_style a {
-  float: none !important;
-  display: inline-block;
-}
-
-.a2a_button_pinterest {
-  span {
-    background-size: 30px;
-    background-repeat: no-repeat !important;
-    background-position: center;
-  }
-}
-
-.a2a_button_facebook {
-  span {
-    background-size: 27px;
-    background-repeat: no-repeat !important;
-    background-position: 0% 15%;
-  }
-}
-
-.a2a_button_google_plus {
-  span {
-    background-size: 40px;
-    background-repeat: no-repeat !important;
-    background-position: center;
-  }
-}
 
 
 

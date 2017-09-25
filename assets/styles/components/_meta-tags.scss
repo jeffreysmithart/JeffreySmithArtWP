@@ -1,0 +1,19 @@
+.meta-tags {
+  margin-top: rem-calc(60);
+
+  h6, h5 {
+    text-transform: lowercase;
+    font-family: $font-family-monospace;
+    color: rgba($medium-gray, 0.8);
+
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+      text-decoration-skip: ink;
+      font-family: $font-sans-serif;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
