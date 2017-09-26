@@ -186,9 +186,16 @@
   }
 
   &-large {
-    margin: rem-calc(15) rem-calc(-100) rem-calc(70) !important;
-    flex: 0 0 calc(100% + #{rem-calc(200)});
+    margin: 0 0 rem-calc(10);
+    flex: 0 0 100%;
     max-width: none;
+    @include breakpoint(medium){
+      margin: 0 0 rem-calc(55) !important;
+    }
+    @include breakpoint(1460px){
+      margin: rem-calc(15) rem-calc(-100) rem-calc(70) !important;
+      flex: 0 0 calc(100% + #{rem-calc(200)});
+    }
     .post-text-content {
       left: rem-calc(110)
     }

@@ -29,7 +29,7 @@ body[class*="portfolio"] {
   padding: rem-calc(5) 0 rem-calc(60);
 
   @include breakpoint(small only) {
-    padding: rem-cal(5) rem-calc(30) 0;
+    padding: rem-calc(5) rem-calc(10) 0;
   }
 }
 
@@ -97,9 +97,6 @@ body[class*="portfolio"] {
     width: 100%;
     top: 0;
     left: 0;
-
-    // background-color: rgba(255, 255, 255, 0.3);
-    // mix-blend-mode: soft-light;
     z-index: 0;
 
     @include breakpoint(small only) {
@@ -211,14 +208,14 @@ body[class*="portfolio"] {
 /*  ======== portfolio card styling  ======== */
 .portfolio-items-wrapper {
   & > .row {
-    max-width: none;
-    margin-left: rem-calc(-17.5);
-    margin-right: rem-calc(-17.5);
-
-    @media (max-width: 1200px) {
-      margin-left: rem-calc(-10);
-      margin-right: rem-calc(-10);
-    }
+    //max-width: none;
+    //margin-left: rem-calc(-17.5);
+    //margin-right: rem-calc(-17.5);
+    //
+    //@media (max-width: 1200px) {
+    //  margin-left: rem-calc(-10);
+    //  margin-right: rem-calc(-10);
+    //}
   }
 
   .portfolio-item-inner {

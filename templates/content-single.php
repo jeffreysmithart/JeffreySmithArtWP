@@ -30,19 +30,24 @@
     <?php get_template_part('templates/social-share'); ?>
     <footer class="post-footer">
         <div class="meta-tags">
-        <h5>posted in:
-        <?php the_category( ' / ' );?>
-        </h5>
-        <h5>
-           <?php the_tags(); ?>
-        </h5>
-    </div>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+            <h5>posted in:
+            <?php the_category( ' / ' );?>
+            </h5>
+            <h5>
+               <?php the_tags(); ?>
+            </h5>
+        </div>
+        <div class="page-module__large text-left">
+            <div class="row align-center">
+                <div class="columns large-8">
+                    <?php comments_template('/templates/comments.php'); ?>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <?php comments_template('/templates/comments.php'); ?>
+
   </article>
   
 <?php endwhile; ?>
-</div>
-</div>
+

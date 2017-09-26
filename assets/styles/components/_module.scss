@@ -1,0 +1,30 @@
+.page-module {
+
+  &__large {
+    margin-bottom: rem-calc(100) !important;
+  }
+  &__medium {
+    margin-bottom: rem-calc(75) !important;
+  }
+  &__small {
+    margin-bottom: rem-calc(50) !important;
+  }
+}
+
+.constrain, %constrain {
+  max-width: $global-width-padded;
+  margin-left: rem-calc(10);
+  margin-right: rem-calc(10);
+  @include breakpoint(medium) {
+    margin-left: rem-calc(15);
+    margin-right: rem-calc(15);
+  }
+  @include breakpoint(large){
+    margin-left: rem-calc(30);
+    margin-right: rem-calc(30);
+  }
+  @include breakpoint(1460px){
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -8,9 +8,9 @@
 	</section>
 <?php endif; ?>
 
-<section class="page-section"><!--Recent painting/portfolio section -->
-	<div class="row">
-		<h2 class="blog-feed-headline columns" >Recent Paintings</h2>
+<section class="page-section page-module__large"><!--Recent painting/portfolio section -->
+	<div class="constrain">
+		<h2 class="section-headline" >Recent Paintings</h2>
 	</div>
 	<div class="row align-center" >
 		<?php
@@ -72,15 +72,15 @@
 	</div>
 </section>
 
-<section class="page-section shop-feed clearfix "> <!--shop section -->
+<section class="page-section shop-feed clearfix  page-module__large"> <!--shop section -->
 	<div class="shop-feed-inner">
 		<div class="shop-headline-wrapper">
 			<h2 class="shop-headline" >From the Shop</h2>
 		</div>
 		<?php echo do_shortcode('[recent_products per_page="3" columns="3"]');?>
 
-		<div class="row ">
-			<div class="columns shop-cta  " >
+
+			<div class=" shop-cta  " >
 				<div class="cta-card__simple" >	
 					<a href="<?php the_field('cta_button_page_link_');?>" >
 						<div class="cta-card__simple-inner">
@@ -90,5 +90,5 @@
 					</a>
 				</div>
 			</div>
-		</div>
+
 </section>

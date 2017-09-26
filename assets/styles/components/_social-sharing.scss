@@ -1,7 +1,12 @@
 .social-share {
   text-align: center;
   padding-bottom: rem-calc(30);
-  margin: rem-calc(100) 0 rem-calc(30);
+  margin: rem-calc(60) 0 rem-calc(30);
+
+  @include breakpoint(medium){
+    padding-bottom: rem-calc(50);
+    margin: rem-calc(100) 0 rem-calc(50);
+  }
 
 
   &__headline {

@@ -21,8 +21,8 @@
        <?php  dynamic_sidebar('sidebar-search');?>    
      </div>
     
-    <div class="social-follow">
-    <h3 class="section-headline">Find Me</h3>
+    <div class="social-share">
+    <h3 class="social-share__headline">Find Me</h3>
      <div class="a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow text-center">
       <a class="a2a_button_facebook" data-a2a-follow="jeffreysmithart"></a><a class="a2a_button_instagram" data-a2a-follow="jeffreysmithart"></a><a class="a2a_button_pinterest" data-a2a-follow="jeffreysmithart"></a>
     </div>
