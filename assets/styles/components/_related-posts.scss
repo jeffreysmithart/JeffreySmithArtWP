@@ -63,6 +63,9 @@
     @include breakpoint(medium){
       width: calc(50% - 27.5px);
       margin-bottom: 0;
+      &:first-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }

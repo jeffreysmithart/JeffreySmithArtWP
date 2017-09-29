@@ -26,7 +26,7 @@
     margin-right: rem-calc(30);
   }
   @include breakpoint(1460px){
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

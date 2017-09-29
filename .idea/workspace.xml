@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="510b00bb-d2d4-4bd8-8f8c-50bda8853b00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/components/_related-posts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/related-posts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/components/_buttons.scss" afterPath="$PROJECT_DIR$/assets/styles/components/_buttons.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/components/_module.scss" afterPath="$PROJECT_DIR$/assets/styles/components/_module.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/components/_social-sharing.scss" afterPath="$PROJECT_DIR$/assets/styles/components/_social-sharing.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/layouts/_pages.scss" afterPath="$PROJECT_DIR$/assets/styles/layouts/_pages.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/main.scss" afterPath="$PROJECT_DIR$/assets/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/comments.php" afterPath="$PROJECT_DIR$/templates/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content-single-portfolio.php" afterPath="$PROJECT_DIR$/templates/content-single-portfolio.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content-single.php" afterPath="$PROJECT_DIR$/templates/content-single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/components/_related-posts.scss" afterPath="$PROJECT_DIR$/assets/styles/components/_related-posts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/related-posts.php" afterPath="$PROJECT_DIR$/templates/related-posts.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,21 +49,21 @@
         <entry file="file://$PROJECT_DIR$/assets/styles/components/_module.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+              <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="related-posts.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="related-posts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/related-posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="615">
+              <caret line="41" column="68" lean-forward="false" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-                <marker date="1506661902000" expanded="true" signature="1162:1730" ph="..." />
-                <marker date="1506661902000" expanded="true" signature="1411:1433" ph="..." />
+                <marker date="1506689806000" expanded="true" signature="1255:1911" ph="..." />
+                <marker date="1506689806000" expanded="true" signature="1504:1526" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-single-portfolio.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content-single-portfolio.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/content-single-portfolio.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="417">
@@ -100,8 +92,8 @@
       <file leaf-file-name="_related-posts.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/components/_related-posts.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+            <state relative-caret-position="560">
+              <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -111,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/assets/styles/components/_shop-listing.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+              <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -166,17 +158,17 @@
         <option value="$PROJECT_DIR$/assets/styles/layouts/_woo-single-product.scss" />
         <option value="$PROJECT_DIR$/lib/setup.php" />
         <option value="$PROJECT_DIR$/assets/styles/layouts/_woo-gallery.scss" />
-        <option value="$PROJECT_DIR$/assets/styles/components/_module.scss" />
         <option value="$PROJECT_DIR$/assets/styles/main.scss" />
         <option value="$PROJECT_DIR$/assets/styles/layouts/_post-index.scss" />
         <option value="$PROJECT_DIR$/assets/styles/components/_buttons.scss" />
         <option value="$PROJECT_DIR$/templates/comments.php" />
         <option value="$PROJECT_DIR$/templates/content-single.php" />
         <option value="$PROJECT_DIR$/assets/styles/layouts/_pages.scss" />
-        <option value="$PROJECT_DIR$/templates/related-posts.php" />
-        <option value="$PROJECT_DIR$/assets/styles/components/_related-posts.scss" />
         <option value="$PROJECT_DIR$/assets/styles/components/_social-sharing.scss" />
         <option value="$PROJECT_DIR$/templates/content-single-portfolio.php" />
+        <option value="$PROJECT_DIR$/assets/styles/components/_module.scss" />
+        <option value="$PROJECT_DIR$/assets/styles/components/_related-posts.scss" />
+        <option value="$PROJECT_DIR$/templates/related-posts.php" />
       </list>
     </option>
   </component>
@@ -317,12 +309,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506296560476</updated>
       <workItem from="1506296562640" duration="12643000" />
-      <workItem from="1506651353051" duration="9065000" />
+      <workItem from="1506651353051" duration="9917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21708000" />
+    <option name="totallyTimeSpent" value="22560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1400" height="757" extended-state="0" />
@@ -335,7 +327,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -688,7 +680,7 @@
         <state relative-caret-position="3105">
           <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -749,38 +741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/components/_module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/related-posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-            <marker date="1506661902000" expanded="true" signature="1162:1730" ph="..." />
-            <marker date="1506661902000" expanded="true" signature="1411:1433" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/components/_related-posts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/components/_shop-listing.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -798,6 +762,34 @@
         <state relative-caret-position="417">
           <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/components/_module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/components/_related-posts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/related-posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="68" lean-forward="false" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <marker date="1506689806000" expanded="true" signature="1255:1911" ph="..." />
+            <marker date="1506689806000" expanded="true" signature="1504:1526" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
