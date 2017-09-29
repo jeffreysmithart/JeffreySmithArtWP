@@ -17,6 +17,12 @@
   }
 }
 
+body[class*="tax"] {
+  .main {
+    padding: rem-calc(180) 0 rem-calc(100);
+  }
+}
+
 body[class*="portfolio"] {
   .main > .page-section {
    @include breakpoint(small only) {

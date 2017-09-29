@@ -3,9 +3,10 @@ if (post_password_required()) {
   return;
 }
 ?>
-
+<?php if (have_comments()) : ?>
 <section id="comments" class="comments">
-  <?php if (have_comments()) : ?>
+
+      <div class="page-module__large">
     <h2><?php printf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?></h2>
 
     <ol class="comment-list">
@@ -30,7 +31,9 @@ if (post_password_required()) {
     <div class="alert alert-warning">
       <?php _e('Comments are closed.', 'sage'); ?>
     </div>
-  <?php endif; ?>
+      </div>
+
 
   <?php comment_form(); ?>
 </section>
+<?php endif; ?>

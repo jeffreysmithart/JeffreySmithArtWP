@@ -1,5 +1,7 @@
 .page-module {
-
+  &__xlarge {
+    margin-bottom: rem-calc(125) !important;
+  }
   &__large {
     margin-bottom: rem-calc(100) !important;
   }

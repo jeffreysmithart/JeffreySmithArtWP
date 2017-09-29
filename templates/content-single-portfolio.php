@@ -65,20 +65,26 @@
   </div> 
 
     <footer class="post-footer"> <!-- item meta information -->
-      <div class="hide-for-medium">
+        <div class="row align-center">
+            <div class="columns medium-12 large-11">
+                <?php get_template_part('templates/social-share'); ?>
+            </div>
+        </div>
+      <div class="hide-for-medium meta-tags page-module__small">
         <h5>
           <?php echo get_the_term_list( $post->ID, 'portfolio-category', 'posted in:  ', '/', '' ); ?>
         </h5>
-        <h6>
+        <h5>
           <?php echo get_the_term_list( $post->ID, 'portfolio-tags', 'tags: ', ',', '' ); ?>
-        </h6>
-      </div>   
-    </footer>
-    <div class="row align-center">
-      <div class="columns medium-12 large-11">
-        <?php get_template_part('templates/social-share'); ?> 
+        </h5>
       </div>
-    </div>
+
+
+        <div class="page-module__large">
+            <?php get_template_part('/templates/related-posts'); ?>
+        </div>
+
+    </footer>
 
 
   </article>

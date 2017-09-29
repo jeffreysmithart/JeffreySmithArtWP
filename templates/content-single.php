@@ -27,9 +27,10 @@
       </div>
       <?php get_template_part('templates/flexible', 'layouts'); ?>
     </div>
-    <?php get_template_part('templates/social-share'); ?>
+
     <footer class="post-footer">
-        <div class="meta-tags">
+        <?php get_template_part('templates/social-share'); ?>
+        <div class="meta-tags page-module__large">
             <h5>posted in:
             <?php the_category( ' / ' );?>
             </h5>
@@ -37,12 +38,17 @@
                <?php the_tags(); ?>
             </h5>
         </div>
-        <div class="page-module__large text-left">
+        <div class="text-left">
             <div class="row align-center">
                 <div class="columns large-8">
                     <?php comments_template('/templates/comments.php'); ?>
                 </div>
             </div>
+        </div>
+        <div class="page-module__large">
+
+                <?php get_template_part('/templates/related-posts'); ?>
+
         </div>
     </footer>
 
