@@ -1,14 +1,18 @@
-<div class="row collapse">
-<div class="column small-12">
+
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <header>
       <?php
       if ( has_post_thumbnail() ) {
         echo '<div class="featured-image-wrapper"';
-        if (get_field('accent_background_color')){
-        echo  'style="background-color:' . get_field('accent_background_color') .';"';
-        }
+
+      if (get_field('accent_background_color')){
+
+          $Hex_color = get_field('accent_background_color');
+          $RGB_color = hex2rgb($Hex_color);
+          $Final_Rgb_color = implode(", ", $RGB_color);
+          echo'style="background-image: linear-gradient(to bottom, rgba('. $Final_Rgb_color .',1) 0%,rgba('. $Final_Rgb_color .',1) 60%,rgba('. $Final_Rgb_color .',0) 100%);"';
+      }
         echo '>';
           echo '<div class="featured-image-inner">';
             the_post_thumbnail("full");?>
@@ -90,7 +94,6 @@
   </article>
   
 <?php endwhile; ?>
-</div>
-</div>
-</div>
-</div>
+
+
+

@@ -1,0 +1,7 @@
+.flexible-content {
+  .column {
+    &:first-of-type {
+      max-width: 100%;
+    }
+  }
+}

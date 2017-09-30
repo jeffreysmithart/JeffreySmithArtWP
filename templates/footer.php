@@ -1,24 +1,6 @@
-<?php if (get_field('sign_up_for_display') == "footer_top" || is_archive('portfolio') || is_search() ) { ?>
-<div class="sign-up-box sign-up-box-top" <?php
-		if (get_field('newsletter_background_image', 'option')){
-				echo 'style="background-image: url(\'';
-				the_field('newsletter_background_image', 'option');
-				echo '\'); "';
-			}
-	?>>
-	<div class="row">
-		<div class="small-12 columns ">
-			<div class="sign-up-box-inner">
-				<?php dynamic_sidebar('sidebar-sign-up'); ?>
-			</div>
-		</div>
-	</div>
-</div>
-<?php } ?>
 
 <footer class="content-info site-footer">
 	<div class="container">
-		
 		<?php
 			if ( is_wc_endpoint_url( 'order-received' ) || ( ! is_cart() && ! is_checkout() )  ){
 		?>
@@ -27,18 +9,10 @@
 				<?php dynamic_sidebar('sidebar-footer-top'); ?>
 			</div>
 		</div>
-		<?php } ?>
-		<?php
-			if ( is_wc_endpoint_url( 'order-received' ) || ( ! is_cart() && ! is_checkout() ) ){
-		?>
-		<div class="row ">
-			<?php if ( is_front_page() || get_field('sign_up_for_display') == "footer_right"){ ?>
-			<div class=" small-12 medium-6 column about-stacked">
-				<?php dynamic_sidebar('sidebar-footer-left'); ?>
-			</div>
 
-			<div class=" small-12 medium-6 column">
-			<div class=" sign-up-box" <?php
+		<div class="row ">
+			<div class=" small-12 column">
+			    <div class=" sign-up-box" <?php
 					if (get_field('newsletter_background_image', 'option')){
 						echo 'style="background-image: url(\'';
 						the_field('newsletter_background_image', 'option');
@@ -56,14 +30,9 @@
 				
 			</div>
 
-			<?php } else { ?>
 
-			<div class=" small-12  column">
-				<?php dynamic_sidebar('sidebar-footer-left'); ?>
-			</div>
-			<?php } ?>
 		</div>
-		<?php } ?>
+            <?php }//close of condition check for WooCommerce pages ?>
 		<div class="row">
 			<div class="columns sub-footer">
 

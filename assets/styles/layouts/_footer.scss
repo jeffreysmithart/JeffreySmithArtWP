@@ -1,8 +1,7 @@
 .site-footer {
-  background-color: $off-white-blue;
+  background-image: linear-gradient(to bottom, rgba($off-white-blue,0) 0%,rgba($off-white-blue,1) 20%,rgba($off-white-blue,1) 100%);
   padding: rem-calc(50) 0;
-  border-top: 2px solid darken($off-white-blue, 5%);
-
+  //border-top: 2px solid darken($off-white-blue, 5%);
 }
 
 .insta-wrapper {
@@ -19,6 +18,7 @@
   position: relative;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   @include breakpoint(medium up) {
     padding-top: rem-calc(30);
@@ -56,101 +56,8 @@
   }
 }
 
-.site-footer {
-  .sign-up-box {
-    text-align: center;
-    background-color: $deep-blue;
-    color: $white;
-    padding: rem-calc(30);
-    position: relative;
-    height: 100%;
-
-    .af-body {
-      text-align: left;
-      display: inline-block;
-    }
-
-    .af-element {
-      display: block;
-    }
-
-    &-inner {
-      
-      left: 0;
-      top: 0;
-      right: 0;
-      z-index: 2;
-      position: relative;
-
-      @include breakpoint(medium up) {
-        position: absolute;
-        top: rem-calc(30);
-        bottom: rem-calc(30);
-        right: rem-calc(30);
-        left: rem-calc(30);
-      }
-    }
-
-    .textwidget {
-      @include breakpoint(medium up) {
-        position: absolute;
-        top: 50%;
-        left: rem-calc(30);
-        right: rem-calc(30);
-        transform: translateY(-50%);
-      }
-    }
-
-    h4 {
-      font-family: $body-font-family;
-      font-weight: 100;
-    }
-    .af-form-wrapper .af-element.buttonContainer input {
-      width: 100%;
-    }
-  }
-}
-
-.about_footer_wrap {
-  
-  box-shadow: 0 2px 3px 2px rgba(16,45,53,.13);
-  background-color: $white;
-      display: flex;
-    align-items: center;
-
-  .about_footer_text_wrap {
-    display: inline-block;
-    margin: rem-calc(15) auto;
-    text-align: center;
 
 
-    h2 {
-      margin: 15px 0;
-      display: inline-block;
-      line-height: 1.1;
-      font-size: rem-calc(24);
-    }
-  }
-}
-
-.about-stacked {
-  .about_footer_wrap {
-    flex-direction: column;
-  }
-
-  @include breakpoint(medium){
-.about_footer_image_wrap {
-  width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-  }
-}
-
-.about_footer_image_wrap {
-  display: inline-block;
-}
 
 .copy-info {
 

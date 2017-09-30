@@ -1,6 +1,10 @@
 <?php if (is_front_page()){ ?>
 <div class="header-background" <?php if (get_field('accent_background_color')){
-  echo'style="background-color:' . get_field('accent_background_color') . '"';
+
+    $Hex_color = get_field('accent_background_color');
+    $RGB_color = hex2rgb($Hex_color);
+    $Final_Rgb_color = implode(", ", $RGB_color);
+  echo'style="background-image:background: linear-gradient(to bottom, rgba('. $Final_Rgb_color .',1) 0%,rgba('. $Final_Rgb_color .',1) 80%,rgba('. $Final_Rgb_color .',0) 100%);"';
   } ?>>
 <?php } ?>
   <header>

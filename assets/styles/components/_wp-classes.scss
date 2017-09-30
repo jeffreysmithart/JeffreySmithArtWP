@@ -55,7 +55,6 @@ article.sticky {
   border: 0 none;
   box-shadow: none;
   line-height: normal;
-  width: auto !important;
   max-width: 100%;
 
   @include breakpoint(small only) {

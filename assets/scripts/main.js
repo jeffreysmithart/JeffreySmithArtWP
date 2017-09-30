@@ -186,10 +186,11 @@ function  addFilter(){
 
   function searchFocus() {
     jQuery(document).on("open.zf.reveal", function(t, e) {
-        jQuery("#searchBox .search-form input[type=search]").focus()
-    }), jQuery(document).on("closed.zf.reveal", function(t, e) {
-        jQuery("#searchBox .search-form input[type=search]").blur()
-    })
+        jQuery("#searchBox .search-form input[type=search]").focus();
+    });
+    jQuery(document).on("closed.zf.reveal", function(t, e) {
+        jQuery("#searchBox .search-form input[type=search]").blur();
+    });
 }
   
   jQuery(document).on("click", function(event){

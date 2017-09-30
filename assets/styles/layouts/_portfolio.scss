@@ -4,14 +4,11 @@
 
 .featured-image-inner {
   opacity: 1;
-  padding: 10% 10% rem-calc(220);
-  background-image: url("../images/noise.png");
-  box-shadow: 2px 2px 15px -3px rgba(0, 0, 0, 0.5);
+  padding: rem-calc(264) 10% rem-calc(220);
 
-  // outline: 10px solid rgba($black, 0.1);
-  // outline-offset: -10px;
+
   @include breakpoint(small only) {
-    padding: 10% 10% rem-calc(45);
+    padding: rem-calc(120) 10% rem-calc(45);
   }
 
 
@@ -84,10 +81,6 @@
 }
 
 .portfolio-text {
-  margin-top: rem-calc(-105);
-  padding-top: rem-calc(60);
-
-  // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50px, rgba(255, 255, 255, 1) 51px);
   background-color: $white;
 
   @include breakpoint(medium down) {
