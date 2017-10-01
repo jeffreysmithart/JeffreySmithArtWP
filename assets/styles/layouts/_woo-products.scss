@@ -18,7 +18,7 @@
 
   .product_title.entry-title {
     color: $near-black;
-
+    margin-bottom: rem-calc(40);
   }
 
   ul.products {
@@ -69,11 +69,9 @@
     }
 
     .price {
-    line-height: (15/13);
-    font-family: $font-family-monospace;
-    font-size: rem-calc(13);
-    text-align: center;
-    display: block;
+      .amount {
+        @extend %shop-price;
+      }
     }
 
     .add_to_cart_button {

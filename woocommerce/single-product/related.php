@@ -25,7 +25,7 @@ if ( $related_products ) : ?>
     <section class="related products shop-feed-inner">
 
         <div class="shop-headline-wrapper">
-            <h2 class="shop-headline"><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
+            <h2 class="shop-headline"><?php esc_html_e( 'You May Also Like', 'woocommerce' ); ?></h2>
         </div>
 
         <?php woocommerce_product_loop_start(); ?>

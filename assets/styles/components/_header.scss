@@ -13,24 +13,24 @@
 
 
     @include breakpoint(medium only) {
-      padding: rem-calc(10) rem-calc(5) 0;
+      padding: rem-calc(8) rem-calc(4) ;
 
     }
     @include breakpoint(medium) {
-      margin-left: rem-calc(15);
-      margin-right: rem-calc(15);
+      margin-left: rem-calc(16);
+      margin-right: rem-calc(16);
     }
     @include breakpoint(large up) {
-      padding: rem-calc(20) rem-calc(20) rem-calc(15);
-      margin: 0 rem-calc(30);
+      padding: rem-calc(24) rem-calc(24) rem-calc(16);
+      margin: 0 rem-calc(32);
     }
     @include breakpoint(1460px) {
       margin: 0 auto;
     }
     @include breakpoint(small only) {
       position: relative;
-      margin-left: rem-calc(10);
-      margin-right: rem-calc(10);
+      margin-left: rem-calc(8);
+      margin-right: rem-calc(8);
     }
   }
 }

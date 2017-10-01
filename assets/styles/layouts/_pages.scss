@@ -338,7 +338,7 @@ body[class*="portfolio"] {
   
 
   &-inner {
-    padding-bottom: rem-calc(45);
+    padding-bottom: rem-calc(40);
 
     // border-bottom: 1px solid $gray;
 
@@ -348,38 +348,38 @@ body[class*="portfolio"] {
 
 
     @include breakpoint(large down) {
-      margin-left: rem-calc(5);
-      margin-right: rem-calc(5);
+      margin-left: rem-calc(8);
+      margin-right: rem-calc(8);
     }
   }
 }
 
 .blog-feed-headline, .section-headline {
-  margin-bottom: rem-calc(15);
-  padding: rem-calc(15) 0 rem-calc(30);
+  margin-bottom: rem-calc(16);
+  padding: 0 0 rem-calc(16);
   font-size: rem-calc(24);
   font-family: adelle-sans,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   font-weight: bold;
   color: $dark-gray;
   border-bottom: 1px solid $light-gray;
-  text-align: center;
+  text-align: left;
 
   @include breakpoint(large down) {
-    margin-left: rem-calc(7.5);
-    margin-right: rem-calc(7.5);
+    margin-left: rem-calc(8);
+    margin-right: rem-calc(8);
   }
 
 
   @include breakpoint(small only) {
     font-size: rem-calc(24);
-    margin-left: rem-calc(10);
-    margin-right: rem-calc(10);
-    margin-bottom: rem-calc(10);
+    margin-left: rem-calc(8);
+    margin-right: rem-calc(8);
+    margin-bottom: rem-calc(8);
   }
 }
 
 /*  ========full width template styling  ======== */
 
 .featured-image-page {
-  margin-bottom: rem-calc(45);
+  margin-bottom: rem-calc(40);
 }

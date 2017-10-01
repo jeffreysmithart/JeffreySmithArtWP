@@ -1,10 +1,12 @@
 .meta-tags {
-  margin-top: rem-calc(60);
+  margin-top: rem-calc(64);
 
   h6, h5 {
+    font-size: rem-calc(16);
     text-transform: lowercase;
     font-family: $font-family-monospace;
     color: rgba($medium-gray, 0.8);
+    line-height: (24/20);
 
     a {
       color: $primary-color;
