@@ -1,5 +1,4 @@
 <?php
-  get_template_part('templates/header', 'breadcrumbs');//breadcrumbs
   while (have_posts()) : the_post(); ?>
   
   <article <?php post_class(); ?>>

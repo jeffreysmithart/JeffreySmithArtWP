@@ -33,45 +33,52 @@
   }
 
   &:after {
-    content: " >";
+    content: "  →";
   }
 }
 
-.button.blue {
-  background-color: $blue-medium;
-  color: #fff;
-}
-
-.button.secondary {
-  transition: box-shadow 0.25s ease-out, background-color 0.25s ease-out;
-
-  &:hover {
-    box-shadow: -5px 5px 17px -1px rgba(0, 0, 0, 0.25);
-
+.button {
+  &.blue {
+    background-color: $blue-medium;
+    color: #fff;
   }
 
-  @include breakpoint(large) {
-    font-size: rem-calc(20);
-  }
-}
-
-.button.hollow {
-  transition: background-color 0.15s ease-in;
-  z-index: 0;
-  color: currentColor;
-  border-color: currentColor;
-  &:hover {
-    background-color: $primary-color;
-    color: white;    
-  }
   &.secondary {
-    color: $secondary-color;
-      &:hover {
-    background-color: $secondary-color;
-    color: white;    
+    transition: box-shadow 0.25s ease-out, background-color 0.25s ease-out;
+
+    &:hover {
+      box-shadow: -5px 5px 17px -1px rgba(0, 0, 0, 0.25);
+
+    }
+
+    @include breakpoint(large) {
+      font-size: rem-calc(20);
     }
   }
 
+  &.hollow {
+    transition: background-color 0.15s ease-in;
+    z-index: 0;
+    color: currentColor;
+    border-color: currentColor;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+    &.secondary {
+      color: $secondary-color;
+      &:hover {
+        background-color: $secondary-color;
+        color: white;
+      }
+    }
+
+  }
+  &.arrow {
+    &:after {
+      content:" →";
+    }
+  }
 }
 
 

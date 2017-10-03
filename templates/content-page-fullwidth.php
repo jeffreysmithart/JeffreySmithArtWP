@@ -1,6 +1,6 @@
 <section class="page-section">
 	<div class="row align-center">
-		<div class="columns small-11 large-9 medium-11">
+		<div class="columns small-12 large-9 medium-11">
 	<?php
 		if ( has_post_thumbnail() ) {?>
 			<section class="featured-image-page">

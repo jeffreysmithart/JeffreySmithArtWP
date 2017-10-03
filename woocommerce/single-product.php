@@ -23,13 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <section class="page-section">
-    <?php
-    if ( function_exists('yoast_breadcrumb') ) {
-        echo '<div class="row column">';
-        yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-        echo '</div>';
-    }
-    ?>
+
   <?php
     /**
      * woocommerce_before_main_content hook

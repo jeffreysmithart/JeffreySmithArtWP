@@ -147,6 +147,19 @@
     }
   }
 }
+.post-headline {
+  line-height: 1.1;
+  font-size: rem-calc(24);
+
+  a {
+    color: $blue-gray;
+    transition: color .25s;
+
+    &:hover, &:focus {
+      color: $primary-color;
+    }
+  }
+}
 
 .post-text-content {
   padding: rem-calc(30) rem-calc(30);

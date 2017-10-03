@@ -166,7 +166,7 @@ function  addFilter(){
         e.preventDefault();
         e.stopPropagation();
         var clickAtt = jQuery(this).attr('data-filter');
-        console.log(clickAtt);
+        // console.log(clickAtt);
         jQuery('.control-pane').each(function(){
           if (jQuery(this).hasClass(clickAtt)){
             jQuery(this).toggleClass('active');

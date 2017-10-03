@@ -12,7 +12,7 @@
 	<div class="constrain">
 		<h2 class="section-headline" >Recent Paintings</h2>
 	</div>
-	<div class="row align-center" >
+	<div class="constrain" >
 		<?php
 		
 			$args = array(
@@ -36,7 +36,7 @@
 			// The Loop
 			if ( $the_query->have_posts() ) {
 				// echo '<section class="row align-stretch">';
-					echo '<div class="columns small-12 medium-12 large-12 portfolio-items-wrapper " data-equalizer data-equalize-by-row="true" id="portfolio" ><div class="row">';
+					echo '<div class=" portfolio-items-wrapper " data-equalizer data-equalize-by-row="true" id="portfolio" ><div class="row">';
 						while ( $the_query->have_posts() ) {
 					
 							$the_query->the_post();
@@ -65,7 +65,7 @@
 				<div class="cta-text-content">
 					<a href="<?php the_field('cta_button_page_link_'); ?>" ><?php the_field('cta_text'); ?></a>
 					<a href="<?php the_field('cta_button_page_link_');
-						?>" class="button  secondary"><?php the_field('cta_button_text'); ?></a>
+						?>" class="button  arrow"><?php the_field('cta_button_text'); ?></a>
 				</div>
 			</div>
 		</div>
@@ -80,12 +80,14 @@
 		<?php echo do_shortcode('[recent_products per_page="3" columns="3"]');?>
 
 
-			<div class=" shop-cta  " >
+			<div class=" shop-cta  <?php the_field('shop_cta_color_scheme'); ?>" style="background-image: url('<?php the_field('shop_cta_background_image'); ?>">
 				<div class="cta-card__simple" >	
 					<a href="<?php the_field('cta_button_page_link_');?>" >
 						<div class="cta-card__simple-inner">
-							<?php the_field('shop_cta_text'); ?>
-							<span class="button secondary "><?php the_field('shop_cta_button_text'); ?></span>
+                            <div class="cta-card__simple-text">
+							    <?php the_field('shop_cta_text'); ?>
+                            </div>
+							<span class="button  arrow"><?php the_field('shop_cta_button_text'); ?></span>
 						</div>
 					</a>
 				</div>

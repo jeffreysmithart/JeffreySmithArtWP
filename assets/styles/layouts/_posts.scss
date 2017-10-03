@@ -29,20 +29,6 @@
 
         &:first-child {
           position: relative;
-
-          // z-index: 1;
-
-          // &:after {
-          //   position: absolute;
-          //   content: "";
-          //   height: rem-calc(70);
-          //   width: rem-calc(70);
-          //   top: rem-calc(-10);
-          //   left: rem-calc(-15);
-          //   background-color: $off-white;
-          //   z-index: -1;
-          // }
-
           &:first-letter {
             font-size: rem-calc(55);
             line-height: 1;
@@ -76,8 +62,8 @@ margin-top: rem-calc(80);
   text-align: center;
 
   @include breakpoint(medium up) {
-    margin-left: rem-calc(7.5);
-    margin-right: rem-calc(7.5);
+    margin-left: 0;
+    margin-right: 0;
   }
 
 

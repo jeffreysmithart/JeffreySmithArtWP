@@ -25,6 +25,11 @@
         </div><!--  /.column -->
         </div><!-- /.row -->
         </div><!-- /.global-header--inner -->
+        <?php
+            if ( !is_front_page()  && !is_archive() && ( is_subpage() || is_single() ) ) {
+                get_template_part('templates/header', 'breadcrumbs');
+            }
+        ?>
       </header>
       <!-- reveal search box -->
       <div class="reveal" id="searchBox" aria-labelledby="searchBox" data-reveal data-h-offset="300" >

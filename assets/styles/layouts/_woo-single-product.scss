@@ -1,7 +1,12 @@
 .woocommerce, .woocommerce-page {
   .woo-wrapper {
-    margin: rem-calc(60) auto rem-calc(90);
-    max-width: $global-width;
+    margin-top: rem-calc(60);
+    margin-bottom:  rem-calc(90);
+    @extend %constrain;
+
+    @include breakpoint(small only){
+      margin-bottom: 0;
+    }
 
     .product {
       @include breakpoint(medium){

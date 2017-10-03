@@ -1,11 +1,11 @@
 .woocommerce, .woocommerce-page {
   .shop-filter {
-    padding: rem-calc(30) rem-calc(15);
+    padding: 0 rem-calc(15);
 
     // background-color: $off-white;
 
     @include breakpoint(medium up) {
-      margin-bottom: 7.5rem;
+      padding: rem-calc(30) rem-calc(15) 7.5rem;
     }
   }
 
@@ -123,7 +123,7 @@
   //cross-sells
   .cross-sells {
     h2 {
-      @include custom-headline;
+
     }
   }
 
@@ -134,7 +134,7 @@
 
   .cart_totals {
     h2 {
-      @include custom-headline;
+
     }
   }
 
@@ -173,12 +173,12 @@
   }
 
   #order_review_heading {
-    @include custom-headline;
+
   }
 
   .woocommerce-billing-fields {
     h3 {
-      // @include custom-headline;
+
    
     }
   }

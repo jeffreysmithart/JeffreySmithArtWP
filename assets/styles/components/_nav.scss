@@ -1,18 +1,19 @@
+//================  breadcrumbs ================//
 #breadcrumbs {
   opacity: 1;
   position: static;
-  padding: 0 rem-calc(10) 0 rem-calc(10);
+  padding: rem-calc(8) rem-calc(8) 0 rem-calc(8);
   margin-bottom: 0;
   font-size: rem-calc(16);
   text-transform: capitalize;
   @include breakpoint(small down) {
-    margin-top: rem-calc(5);
+    margin-top: rem-calc(4);
   }
   @include breakpoint(medium) {
-   padding: 0 rem-calc(10) 0 rem-calc(15);
+   padding: 0 rem-calc(8) 0 rem-calc(16);
   }
   @include breakpoint(large up) {
-   padding: 0 rem-calc(10) 0 rem-calc(35);
+   padding: rem-calc(16) rem-calc(16) 0 rem-calc(32);
   }
 
   a {
@@ -29,35 +30,10 @@
 
 }
 
-//footer menu styling
-.footer-menu {
-  padding: 0;
-  ul {
-    display: inline-block;
 
-    a {
-      color: $primary-color;
-      background-color: transparent;
-      transition: all .25s;
-      white-space: nowrap;
-      &:hover, &:focus {
-        color: $white;
-        background-color: rgba($primary-color, 0.5);
-      }
-    }
-  }
 
-  .menu > li {
-    @include breakpoint(550 down) {
-      display: block;
-    }
-  }
 
-  @include breakpoint(medium up) {
-    float: left;
-  }
-}
-
+//================  mobile menu trigger styling  ================//
 .menu-icon {
   &:before {
     content: "menu";
@@ -85,7 +61,8 @@
   width: 20px;
 }
 
-//header menu styling
+
+//================  header menu styling  ================//
 .main-nav-wrapper {
   li {
     position: relative;
@@ -149,8 +126,6 @@
 
 .main-nav-wrapper {
   text-align: center;
-
-  // border-top: 1px solid currentColor;
 }
 
 .main-nav {
@@ -171,7 +146,7 @@
   }
 }
 
-//Utility Navigation styling
+//================  Utility Navigation styling  ================//
 .utility-nav {
   width: 100%;
   text-align: right;
@@ -195,4 +170,35 @@
 
 .wpmenucart-contents {
   padding-top: .5rem !important;
+}
+
+
+
+//================  footer menu styling  ================//
+.footer-menu {
+  padding: 0;
+  ul {
+    display: inline-block;
+
+    a {
+      color: $primary-color;
+      background-color: transparent;
+      transition: all .25s;
+      white-space: nowrap;
+      &:hover, &:focus {
+        color: $white;
+        background-color: rgba($primary-color, 0.5);
+      }
+    }
+  }
+
+  .menu > li {
+    @include breakpoint(550 down) {
+      display: block;
+    }
+  }
+
+  @include breakpoint(medium up) {
+    float: left;
+  }
 }

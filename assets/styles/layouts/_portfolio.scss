@@ -25,7 +25,6 @@
 
 .featured-title {
   text-align: center;
-  color: $black;
   line-height: 1.2 !important;
   letter-spacing: 1px;
 
@@ -90,7 +89,7 @@
 
 
   @include breakpoint(small only) {
-    padding-top: 0;
+    padding: 0;
     margin-top: 0;
   }
 }

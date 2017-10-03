@@ -21,7 +21,6 @@ body {
 
 .header-background {
   color: $black;
-
   // background-color: #B6B6B6;
   // background-image: url("../images/noise.png"), radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(61, 61, 61, 0.31) 100%);
 }
@@ -49,7 +48,7 @@ body {
   text-align: center;
 }
 
-.custom-healine {
+.custom-healine, %custom-headline {
   border-bottom: 1px solid $gray;
   border-top: 4px double $gray;
   margin-bottom: rem-calc(30);

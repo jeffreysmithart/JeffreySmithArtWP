@@ -34,7 +34,7 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap container" role="document">
       <div class="content <?php if (! is_front_page() ){ ?>    large-collapse<?php } ?>" >
-        <main class="main  <?php if (! is_front_page() && ! is_home() ){ ?>columns <?php } ?>">
+        <main class="main  <?php if (! is_front_page() && ! is_home() ){ ?><?php } ?>">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>

@@ -84,6 +84,33 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_59d2b8f9c70de",
+            "label": "Shop CTA Color Scheme",
+            "name": "shop_cta_color_scheme",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No overlay",
+                "green": "Green",
+                "red": "Red",
+                "yellow": "Yellow",
+                "blue": "Blue"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "none : No overlay",
+            "layout": "vertical",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -103,5 +130,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1500215052
+    "modified": 1506982648
 }

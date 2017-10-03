@@ -29,11 +29,12 @@ select {
   .af-element {
     text-align: left;
     width: rem-calc(250);
-    max-width: 90%;
+
 
     @include breakpoint(675px up) {
       display: inline-block;
       vertical-align: middle;
+      max-width: 90%;
     }
 
 
@@ -73,7 +74,13 @@ select {
         background-color: #FFBB58;
         transition: all .25s;
         color: $body-font-color;
-        padding: rem-calc(7) rem-calc(50);
+        padding: rem-calc(8) rem-calc(48);
+
+        @include breakpoint(small only){
+          padding: rem-calc(24) rem-calc(48);
+          width:100%;
+          margin-top: rem-calc(24);
+        }
 
         &:hover, &:focus {
           background-color: $white;

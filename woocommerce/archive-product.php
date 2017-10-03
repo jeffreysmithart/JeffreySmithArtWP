@@ -25,19 +25,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 <section class="page-section">
 <?php get_template_part('templates/page', 'header'); ?>
 <div class="row align-middle filtering">
-			<div class="column"><?php echo do_shortcode('[facetwp selections="true"]'); ?>
+			<div class="column filtering__results"><?php echo do_shortcode('[facetwp selections="true"]'); ?>
 			</div>
-			<div class="column">
+			<div class="column filtering__sort">
 				<?php echo do_shortcode('[facetwp sort="true"]'); ?>
 			</div>
-			<div class="column">
+			<div class="column filtering__sort">
 				<?php echo do_shortcode('[facetwp per_page="true"]'); ?>
 			</div>
-			<div class="column">
+			<div class="column filtering__results">
 				<span>Showing <?php echo do_shortcode('[facetwp counts="true"]' ); ?> results</span>
 			</div>
 			
 		</div>
+
+    <div class="expanded button-group show-for-small-only"><!-- mobile filter and sort -->
+        <a class="button filter" id="button-filer" type="button" data-filter="controls-filter">Filter</a>
+    </div>
 
 
 
@@ -96,9 +100,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 					 * woocommerce_sidebar hook.
 					 *
 					 * @hooked woocommerce_get_sidebar - 10
-					 */
+					 */?>
+                    <div class="control-pane controls-filter" id="controls-filter" >
+					<button class="close-button hide-for-medium" data-close aria-label="Close Accessible Modal" type="button">
+		      			<span aria-hidden="true">&times;</span>
+	      			</button>
+                <?php
 					dynamic_sidebar('sidebar-primary');
 				?>
+                    </div>
 				</div>
 		</div>
 			<div class="medium-9 small-12 column small-order-1 medium-order-2">

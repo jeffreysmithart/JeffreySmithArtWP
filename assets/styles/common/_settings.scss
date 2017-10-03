@@ -48,6 +48,13 @@ $global-font-size: 100%;
 $global-width: rem-calc(1400);
 $global-width-padded: rem-calc(1460);
 $global-lineheight: 1.5;
+
+
+$red:#e84936;
+
+$green:#028459;
+
+
 $accent-color: #fe6a60;
 $accent-blue: #247BA0;
 
@@ -55,7 +62,10 @@ $brand-primary: #00a2e1;
 $deep-blue: #333558;
 $new-gray: #35393C;
 
-$light-blue: #F5FDFF;
+$blue-light: #F5FDFF;
+$blue: #21a1bf;
+
+
 $gold-light: rgb(255,244,228);
 $gold-medium: #EAAD54;
 $gold-dark: #DE9327;
@@ -85,8 +95,8 @@ $secondary-color: $new-gray;
 $secondarytext: $secondary-color;
 $subtext: $near-black;
 
-$success-color: #7DCE82;
-$warning-color: #ffae00;
+$success-color: $green;
+$warning-color: $yellow;
 $alert-color: $accent-color;
 
 
