@@ -1,0 +1,20 @@
+//top-section
+.featured-painting {
+  text-align: center;
+
+  img {
+    max-height: 90vh;
+    width: auto;
+    max-width: 100%;
+    transition: box-shadow .25s;
+    box-shadow: 30px 17px 86px 4px rgba(0,0,0,.4), 10px 7px 16px 0 rgba(93,64,10,.4), 10px 7px 16px 0 rgba(166,0,0,0.16), 30px 17px 86px 4px rgba(150,192,255,.18), -10px -3px 86px 4px rgba(55,27,25,.23);
+    outline: 2px solid rgba(0,0,0,0.1);
+    outline-offset: -2px;
+    border-radius: 3px;
+
+
+    &:hover, &:focus {
+      //box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

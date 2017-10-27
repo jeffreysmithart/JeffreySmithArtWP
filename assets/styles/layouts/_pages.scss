@@ -74,24 +74,7 @@ body[class*="portfolio"] {
   }
 }
 
-//top-section
-.featured-painting {
-  opacity: 1;
-  text-align: center;
 
-  img {
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
-    max-height: 90vh;
-    width: auto;
-    max-width: 100%;
-    transition: box-shadow .25s;
-   
-
-    &:hover, &:focus {
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-    }
-  }
-}
 
 .about-card {
   display: flex;

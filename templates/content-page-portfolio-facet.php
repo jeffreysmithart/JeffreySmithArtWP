@@ -57,7 +57,7 @@
 		<div class="columns small-12 large-9 medium-8  portfolio-grid-wrapper">
 			
 
-		<?php
+        <?php
 			$my_id = 2;
 			$post_id_5369 = get_post($my_id);
 			$content = $post_id_5369->post_content;
@@ -65,7 +65,9 @@
 			$content = str_replace(']]>', ']]>', $content);
 			echo $content;
 			?>
-			
+
+
+
 		<div class=" porfolio-fascet-nav">
 			
 				<div class="post-navigation text-center">

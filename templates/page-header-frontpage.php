@@ -42,7 +42,7 @@ $some_query = new WP_Query( $args );
                     } ?>>
 					<div class="row constrain">
 
-					<div class="small-12 medium-8  columns featured-painting medium-order-2">
+					<div class="small-12 medium-8  columns featured-painting">
 						<a href="<?php the_permalink(); ?>">
 							<?php the_post_thumbnail(); ?>
 						</a>

@@ -14,7 +14,7 @@
           echo'style="background-image: linear-gradient(to bottom, rgba('. $Final_Rgb_color .',1) 0%,rgba('. $Final_Rgb_color .',1) 60%,rgba('. $Final_Rgb_color .',0) 100%);"';
       }
         echo '>';
-          echo '<div class="featured-image-inner">';
+          echo '<div class="featured-image-inner featured-painting">';
             the_post_thumbnail("full");?>
           </div><!-- close featured-image-inner -->
         </div><!-- featured-image-wrapper-->
