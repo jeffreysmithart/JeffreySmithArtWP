@@ -100,10 +100,10 @@
             },
             "choices": {
                 "none": "No overlay",
-                "green": "Green",
-                "red": "Red",
-                "yellow": "Yellow",
-                "blue": "Blue"
+                "white": "White",
+                "off-white": "Off-white",
+                "blue": "Blue",
+                "black": "Black"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -130,5 +130,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1506982648
+    "modified": 1510443716
 }

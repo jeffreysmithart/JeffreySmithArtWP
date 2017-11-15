@@ -134,21 +134,15 @@
     margin-bottom: rem-calc(32);
     text-transform: uppercase;
     font-size: rem-calc(16);
-
-    @extend .hollow;
-
     padding: .5em 2em .85em;
 
     &:after {
       content: '+';
       font-size: 1.5em;
-      margin-left: 40px;
+      margin-left: rem-calc(42);
       font-weight: 400;
     }
 
-    &:hover {
-      background-color: darken($blue-medium, 15%);
-    }
   }
 
   ul.page-numbers {
@@ -170,7 +164,7 @@
 
     > h2 {
 
-      margin-bottom: rem-calc(30);
+      margin-bottom: rem-calc(24);
       text-align: center;
       font-size: 1.5rem;
       font-family: adelle-sans,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;

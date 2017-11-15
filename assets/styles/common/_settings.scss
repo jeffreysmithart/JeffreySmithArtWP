@@ -45,31 +45,38 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1400);
-$global-width-padded: rem-calc(1460);
+$global-width: rem-calc(1200);
+$global-width-padded: rem-calc(1240);
 $global-lineheight: 1.5;
 
 
 $red:#e84936;
+$red-light: tint($red, 10%);
+$red-dark: shade($red, 20%);
+
+$orange: #ff7139;
+$orange-light: tint($orange, 10%);
+$orange-dark: shade($orange, 20%);
 
 $green:#028459;
+$green-light: tint($green, 10%);
+$green-dark: shade($green, 20%);
 
-
-$accent-color: #fe6a60;
-$accent-blue: #247BA0;
-
-$brand-primary: #00a2e1;
 $deep-blue: #333558;
 $new-gray: #35393C;
 
 $blue-light: #F5FDFF;
 $blue: #21a1bf;
-
+$blue-bright: tint($blue, 40%);
+$blue-dark: shade($blue, 20%);
 
 $gold-light: rgb(255,244,228);
 $gold-medium: #EAAD54;
 $gold-dark: #DE9327;
-$yellow: #FFBB58;
+
+$yellow: #ffbb58;
+$yellow-light: tint($yellow, 10%);
+$yellow-dark: shade($yellow, 20%);
 
 
 /* grays */
@@ -90,20 +97,22 @@ $off-white-blue: #F7FDFF;
 $top-bar-link: currentColor !important;
 
 
-$primary-color: lighten($deep-blue, 15%);
-$secondary-color: $new-gray;
-$secondarytext: $secondary-color;
+$primary-color: $blue-dark;
+$secondary-color: $green;
+
 $subtext: $near-black;
 
 $success-color: $green;
 $warning-color: $yellow;
-$alert-color: $accent-color;
+$alert-color: $red;
 
 
 
 
 $body-background: $white;
 $body-font-color: $dark-gray;
+
+$secondarytext: $dark-gray;
 
 $font-serif: "schoolbook-web", serif;
 $font-sans-serif: "adelle-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -252,7 +261,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 1em 1.5em 1.125em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;

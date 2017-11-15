@@ -40,7 +40,7 @@ $some_query = new WP_Query( $args );
                         $Final_Rgb_color = implode(", ", $RGB_color);
                         echo'style="background-image: linear-gradient(to bottom, rgba('. $Final_Rgb_color .',1) 0%,rgba('. $Final_Rgb_color .',0.2) 60%,rgba('. $Final_Rgb_color .',0) 100%);"';
                     } ?>>
-					<div class="row constrain">
+					<div class="row constrain  align-justify">
 
 					<div class="small-12 medium-8  columns featured-painting">
 						<a href="<?php the_permalink(); ?>">
@@ -53,6 +53,9 @@ $some_query = new WP_Query( $args );
 						}
 							echo '<article class="about-card-inner">';
 							echo '<h3 class="post-headline"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h3>';
+							if (get_field('portfolio_subhead')) {
+                                echo '<h5 class="post-subheadline">' . get_field('portfolio_subhead') . '</h5>';
+                            }
                             echo '<div class="button large arrow" ><a href="'. get_the_permalink() . '">Learn more</a></div>';
 							echo '</article> </div>';
 						}

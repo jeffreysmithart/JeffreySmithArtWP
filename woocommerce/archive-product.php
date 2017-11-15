@@ -21,9 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-
-<section class="page-section">
 <?php get_template_part('templates/page', 'header'); ?>
+<section class="page-section">
+
 <div class="row align-middle filtering">
 			<div class="column filtering__results"><?php echo do_shortcode('[facetwp selections="true"]'); ?>
 			</div>

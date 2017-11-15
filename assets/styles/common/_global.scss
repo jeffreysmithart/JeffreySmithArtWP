@@ -59,6 +59,13 @@ body {
   text-align: center;
 }
 
+@mixin subhead-serif {
+  margin-bottom: rem-calc(24);
+  font-size: rem-calc(36);
+  line-height: 1;
+  transition: color .25s;
+}
+
 body {
   @include breakpoint(medium down) {
     overflow-x: hidden;

@@ -15,7 +15,9 @@
       }
         echo '>';
           echo '<div class="featured-image-inner featured-painting">';
-            the_post_thumbnail("full");?>
+          echo '<a href="' . get_the_post_thumbnail_url("", "full") . '">';
+            the_post_thumbnail("large");
+            echo '</a>';?>
           </div><!-- close featured-image-inner -->
         </div><!-- featured-image-wrapper-->
       </header>

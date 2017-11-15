@@ -275,3 +275,10 @@ $secondary: $off-white-dark;
   padding: rem-calc(15) 0;
   background-color: $white;
 }
+
+
+.post-type-archive-product {
+  .main>.page-section {
+    padding: 2.8125rem 0;
+  }
+}

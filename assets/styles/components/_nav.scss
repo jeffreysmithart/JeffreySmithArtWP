@@ -17,13 +17,13 @@
   }
 
   a {
-    color: $blue-gray;
+    color: currentColor;
     text-decoration: underline;
     text-decoration-skip: ink;
   }
 
   .breadcrumb_last {
-    color: rgba($blue-gray, 0.4);
+    opacity: 0.8;
     text-transform: none;
   }
 
@@ -91,7 +91,7 @@
       }
 
     &:hover {
-      color: $medium-gray;
+      opcaity: 0.8;
        &:after {
         width: calc(100% - #{rem-calc(32)}) !important;
       }
@@ -99,7 +99,7 @@
   }
 
   .current_page_item a, .current-menu-parent a, .active a {
-    color: $primary-color;
+    color: currentColor;
     transition: opacity 0.3s;
 
     &:after {

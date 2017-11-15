@@ -76,65 +76,6 @@ body[class*="portfolio"] {
 
 
 
-.about-card {
-  display: flex;
-  align-content: flex-end;
-
-
-  @include breakpoint(small only) {
-    margin: 30px 15px 0;
-    background-clip: content-box;
-    padding-left: .625rem;
-    padding-right: .625rem;
-  }
-
-}
-
-.about-card-inner {
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-
-
-
-  h3 {
-    opacity: 1;
-    padding-bottom: rem-calc(30);
-    margin-bottom: 0;
-    font-size: rem-calc(35);
-    line-height: 0.9;
-    color: $blue-gray;
-    transition: color .25s;
-
-    @include breakpoint(small down) {
-      font-size: rem-calc(28);
-    }
-
-
-    @include breakpoint(medium only) {
-      font-size: rem-calc(28);
-    }
-
-
-    a {
-      &:hover, &:focus {
-        color: $blue-dark !important;
-      }
-    }
-  }
-
-  .button {
-    opacity: 1;
-    margin-top: rem-calc(30);
-
-    a {
-      color: $white;
-    }
-  }
-}
-
 
 
 

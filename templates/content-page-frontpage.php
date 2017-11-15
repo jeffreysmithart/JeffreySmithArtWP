@@ -9,7 +9,7 @@
 <?php endif; ?>
 
 <section class="page-section page-module__large"><!--Recent painting/portfolio section -->
-	<div class="constrain">
+	<div class="constrain constrain--no-pad">
 		<h2 class="section-headline" >Recent Paintings</h2>
 	</div>
 	<div class="constrain" >
@@ -60,14 +60,15 @@
 	wp_reset_postdata(); 
 ?>
 	<div class="columns large-8 small-12 medium-12 cta-card-wrapper " style="background-image:url('<?php the_field('cta_background_image'); ?>')">
-		<div class=" cta-card " >
+		<div class=" cta-card cta-card__portfolio <?php the_field('cta_color_scheme'); ?>" >
+            <a href="<?php the_field('cta_button_page_link_'); ?>" >
 			<div class="cta-card-inner">
 				<div class="cta-text-content">
-					<a href="<?php the_field('cta_button_page_link_'); ?>" ><?php the_field('cta_text'); ?></a>
-					<a href="<?php the_field('cta_button_page_link_');
-						?>" class="button  arrow"><?php the_field('cta_button_text'); ?></a>
+					<?php the_field('cta_text'); ?>
+					<span class="button large arrow"><?php the_field('cta_button_text'); ?></span>
 				</div>
 			</div>
+            </a>
 		</div>
 	</div>
 </section>
@@ -82,12 +83,12 @@
 
 			<div class=" shop-cta  <?php the_field('shop_cta_color_scheme'); ?>" style="background-image: url('<?php the_field('shop_cta_background_image'); ?>">
 				<div class="cta-card__simple" >	
-					<a href="<?php the_field('cta_button_page_link_');?>" >
+					<a href="<?php the_field('shop_cta_button_page_link');?>" >
 						<div class="cta-card__simple-inner">
                             <div class="cta-card__simple-text">
 							    <?php the_field('shop_cta_text'); ?>
                             </div>
-							<span class="button  arrow"><?php the_field('shop_cta_button_text'); ?></span>
+							<span class="button large arrow"><?php the_field('shop_cta_button_text'); ?></span>
 						</div>
 					</a>
 				</div>

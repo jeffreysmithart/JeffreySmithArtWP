@@ -15,10 +15,13 @@
 <?php
 
 	$image = get_field('page_header_image' );
+	if (is_shop()){
+        $image = get_field('shop_page_header_image', 'options' );
+    }
 
 	if( !empty($image) ) { 
 
-		if (is_page_template('template-portfolio.php')):
+		if (is_page_template('template-portfolio.php') || is_shop()):
 		$size = 'pageheader';
 	else : 
 		$size = 'giant';

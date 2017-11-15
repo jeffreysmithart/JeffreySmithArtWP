@@ -183,17 +183,10 @@ function assets() {
   if (is_woocommerce() ){
     wp_enqueue_script('customWoo.js', Assets\asset_path('scripts/customWoo.js'), ['jquery'], null, true);
   }
-  // if (is_archive() || is_singular('product') ){
-  //   wp_enqueue_script('post-ajax.js', Assets\asset_path('scripts/post-ajax.js'), ['jquery'], null, false);
-  // }
 
-  // wp_enqueue_script( 'gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js', array(), null, true );
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-  // wp_enqueue_script('foundation.sticky.js', Assets\asset_path('scripts/foundation.sticky.js'), ['jquery'], null, true);
-  // wp_enqueue_script('foundation.util.mediaQuery.js', Assets\asset_path('scripts/foundation.util.mediaQuery.js'), ['jquery'], null, true);
-  // wp_enqueue_script('foundation.util.triggers.js', Assets\asset_path('scripts/foundation.util.triggers.js'), ['jquery'], null, true);
   wp_enqueue_script('foundation.min.js', Assets\asset_path('scripts/foundation.min.js'), ['jquery'], null, true);
-  // wp_enqueue_script('scrollme', Assets\asset_path('scripts/jquery.scrollme.min.js'), ['jquery'], null, true);
+
   
 }
   
@@ -201,17 +194,10 @@ function assets() {
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
 
-// function addtoany_add_services( $services ) {
-//     $services['example_share_service'] = array(
-//         'name'        => 'Example Share Service',
-//         'icon_url'    => 'https://www.google.com/favicon.ico',
-//         'icon_width'  => 32,
-//         'icon_height' => 32,
-//         'href'        => 'https://www.example.com/share?url=A2A_LINKURL&title=A2A_LINKNAME'
-//     );
-//     return $services;
-// }
-// add_filter( 'A2A_SHARE_SAVE_services', 'addtoany_add_services', 10, 1 );
+add_action( 'acf/input/admin_enqueue_scripts', function() {
+    wp_enqueue_script( 'acf-custom-colors',  Assets\asset_path('scripts/aw-colors.js'), 'acf-input', '1.0', true );
+});
+
 
 
 //[follow me]
@@ -224,10 +210,5 @@ function follow_me_func(){
 
 }
 add_shortcode( 'follow_me', 'follow_me_func' );
-
-function donatebutton() {
-    return '<a href="/donate/" class="donate-button">Donate!</a>';
-}
-add_shortcode('donate', 'donatebutton');
 
 

@@ -86,6 +86,33 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5a07831871448",
+            "label": "CTA Color Scheme",
+            "name": "cta_color_scheme",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No overlay",
+                "white": "White",
+                "off-white": "Off-white",
+                "blue": "Blue",
+                "black": "Black"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "off-white : Off-white",
+            "layout": "vertical",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -105,5 +132,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1494108951
+    "modified": 1510443707
 }

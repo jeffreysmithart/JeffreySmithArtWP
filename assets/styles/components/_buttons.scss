@@ -2,21 +2,32 @@
   display: inline-block;
   vertical-align: top;
   zoom: 1;
-  padding: 7px 14px;
-  margin: 5px auto 0 auto;
-  background: $dark-gray;
-  border: none;
-  color: #fff;
+  padding: rem-calc(8) rem-calc(16) rem-calc(9);
+  margin:rem-calc(4) auto 0 auto;
+  background: transparent;
+  border: 1px solid $primary-color;
+  color: $primary-color;
   text-decoration: none;
   font-size: 13px;
   line-height: 1.5;
   border-radius: $global-radius-rounded;
   box-sizing: border-box;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 6px rgba($body-font-color, 0.52);
+  &:hover {
+    background-color: $primary-color;
+    color:$white;
+    border: 1px solid $primary-color;
+  }
+
 }
 
 #sb_instagram .sbi_follow_btn a {
   background-color: $primary-color;
+  color: $white;
 }
+
+
 
 .read-more-link {
   text-transform: uppercase;
@@ -38,6 +49,7 @@
 }
 
 .button {
+  box-shadow: 2px 2px 6px rgba($body-font-color, 0.52);
   &.blue {
     background-color: $blue-medium;
     color: #fff;

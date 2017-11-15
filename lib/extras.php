@@ -41,6 +41,3 @@ add_filter( 'jetpack_relatedposts_filter_options', 'jetpackme_more_related_posts
 
 
 
-
-
-

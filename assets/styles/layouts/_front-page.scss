@@ -1,14 +1,73 @@
 .home {
   .page-header{
     @include breakpoint(small only ){
-      padding-left: rem-calc(10);
-      padding-right: rem-calc(10);
+      padding-left: rem-calc(8);
+      padding-right: rem-calc(8);
+      padding: rem-calc(144) rem-calc(8) rem-calc(48);
     }
     @include breakpoint(medium up) {
-      padding: rem-calc(160) 0 rem-calc(120);
-      //background-color: #B6B6B6;
-      //background-image: url("../images/noise.png"), radial-gradient(ellipse at 55% 35%, rgba(255, 255, 255, 0.5) 0%, rgba(187, 187, 187, 0.15) 100%);
+      padding: rem-calc(216) 0 rem-calc(120);
     }
   }
 }
 
+
+//page header
+
+.about-card {
+  display: flex;
+  align-content: flex-end;
+
+
+  @include breakpoint(small only) {
+    margin-top: rem-calc(36);
+  }
+  @include breakpoint(medium){
+    justify-content: center;
+
+  }
+  .post-subheadline {
+    font-family: $font-sans-serif;
+    margin-bottom: rem-calc(32);
+    margin-top: rem-calc(-16);
+  }
+
+}
+
+.about-card-inner {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+
+
+  h3 {
+    @include subhead-serif;
+    color: $body-font-color;
+
+    @include breakpoint(small down) {
+      font-size: rem-calc(28);
+    }
+
+
+    @include breakpoint(medium only) {
+      font-size: rem-calc(28);
+    }
+
+
+    a {
+      &:hover, &:focus {
+        color: $blue-dark !important;
+      }
+    }
+  }
+
+  .button {
+
+    a {
+      color: $white;
+    }
+  }
+}
